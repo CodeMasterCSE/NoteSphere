@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fadeInUp { animation: fadeInUp 0.5s ease-out; }
+        .animate-slideInLeft { animation: slideInLeft 0.5s ease-out; }
+        .animate-popIn { animation: popIn 0.3s ease-out; }
+    </style>
 </head>
 <body>
     <div class="app-container">
@@ -16,9 +33,13 @@
                 <span class="logo-text">Note Sphere</span>
             </div>
             <nav>
-                <button id="addNewButton" class="nav-button active">
-                    <i data-lucide="plus"></i>
-                    Add new
+                <button id="addNewNoteButton" class="nav-button">
+                    <i data-lucide="file-plus"></i>
+                    New Note
+                </button>
+                <button id="addNewFolderButton" class="nav-button">
+                    <i data-lucide="folder-plus"></i>
+                    New Folder
                 </button>
                 <button id="trashButton" class="nav-button">
                     <i data-lucide="trash-2"></i>
@@ -46,8 +67,8 @@
             </header>
 
             <section class="folders-section">
-                <h2>Recent Folders</h2>
-                <div class="tabs">
+                <h2 class="animate-fadeInUp">Recent Folders</h2>
+                <div class="tabs animate-slideInLeft">
                     <button class="tab active" data-tab="All">All</button>
                     <button class="tab" data-tab="Today">Today</button>
                     <button class="tab" data-tab="This Week">This Week</button>
@@ -57,8 +78,8 @@
             </section>
 
             <section class="notes-section">
-                <h2>My Notes</h2>
-                <div class="tabs">
+                <h2 class="animate-fadeInUp">My Notes</h2>
+                <div class="tabs animate-slideInLeft">
                     <button class="tab active" data-tab="All">All</button>
                     <button class="tab" data-tab="Today">Today</button>
                     <button class="tab" data-tab="This Week">This Week</button>

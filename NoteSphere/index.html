@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="NoteSphere Logo" class="logo-icon" />
+                <span class="logo-text">Note Sphere</span>
+            </div>
+            <nav>
+                <button id="addNewButton" class="nav-button active">
+                    <i data-lucide="plus"></i>
+                    Add new
+                </button>
+                <button id="trashButton" class="nav-button">
+                    <i data-lucide="trash-2"></i>
+                    Trash
+                </button>
+            </nav>
+            <div class="notes-folders-section">
+                <h3>All Notes & Folders</h3>
+                <h4>Folders</h4>
+                <div id="folderList" class="folder-list"></div>
+                <h4>Notes</h4>
+                <div id="noteList" class="note-list"></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="header-left">
+                    <h1>MY NOTES</h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search notes...">
+                    <i class="search-icon" data-lucide="search"></i>
+                </div>
+            </header>
+
+            <section class="folders-section">
+                <h2>Recent Folders</h2>
+                <div class="tabs">
+                    <button class="tab active" data-tab="All">All</button>
+                    <button class="tab" data-tab="Today">Today</button>
+                    <button class="tab" data-tab="This Week">This Week</button>
+                    <button class="tab" data-tab="This Month">This Month</button>
+                </div>
+                <div class="folders-grid" id="foldersGrid"></div>
+            </section>
+
+            <section class="notes-section">
+                <h2>My Notes</h2>
+                <div class="tabs">
+                    <button class="tab active" data-tab="All">All</button>
+                    <button class="tab" data-tab="Today">Today</button>
+                    <button class="tab" data-tab="This Week">This Week</button>
+                    <button class="tab" data-tab="This Month">This Month</button>
+                </div>
+                <div class="notes-grid" id="notesGrid"></div>
+            </section>
+        </main>
+    </div>
+
+    <div id="addNoteModal" class="modal">
+        <div class="modal-content">
+            <h2>Add New Note</h2>
+            <div class="note-form">
+                <div class="input-group">
+                    <label for="noteTitle">Title</label>
+                    <input type="text" id="noteTitle" placeholder="Enter note title" required>
+                </div>
+                <div class="input-group">
+                    <label for="noteContent">Content</label>
+                    <textarea id="noteContent" placeholder="Write your note here" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label>Color</label>
+                    <div class="color-picker">
+                        <button class="color-option" data-color="#dbeafe" style="background-color: #dbeafe;"></button>
+                        <button class="color-option" data-color="#fee2e2" style="background-color: #fee2e2;"></button>
+                        <button class="color-option" data-color="#fef9c3" style="background-color: #fef9c3;"></button>
+                        <button class="color-option" data-color="#dcfce7" style="background-color: #dcfce7;"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="cancelNote" class="btn-secondary">Cancel</button>
+                <button id="saveNote" class="btn-primary">Save Note</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="addFolderModal" class="modal">
+        <div class="modal-content">
+            <h2>Add New Folder</h2>
+            <input type="text" id="folderName" placeholder="Folder Name" required>
+            <div class="color-picker">
+                <button class="color-option" data-color="#dbeafe" style="background-color: #dbeafe;"></button>
+                <button class="color-option" data-color="#fee2e2" style="background-color: #fee2e2;"></button>
+                <button class="color-option" data-color="#fef9c3" style="background-color: #fef9c3;"></button>
+                <button class="color-option" data-color="#dcfce7" style="background-color: #dcfce7;"></button>
+            </div>
+            <div class="modal-actions">
+                <button id="cancelFolder">Cancel</button>
+                <button id="saveFolder">Create Folder</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="trashModal" class="modal">
+        <div class="modal-content">
+            <h2>Trash</h2>
+            <div id="trashContent"></div>
+            <div class="modal-actions">
+                <button id="closeTrash">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

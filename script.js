@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>New Folder</span>
         `;
         newFolderButton.addEventListener('click', () => {
-            document.getElementById('addFolderModal').style.display = 'block';
+            openAddFolderModal();
         });
         foldersGrid.appendChild(newFolderButton);
         lucide.createIcons();
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>New Note</span>
         `;
         newNoteButton.addEventListener('click', () => {
-            document.getElementById('addNoteModal').style.display = 'block';
+            openAddNoteModal();
         });
         notesGrid.appendChild(newNoteButton);
         lucide.createIcons();
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedNoteColor = '#dbeafe';
 
     addNewNoteButton.addEventListener('click', () => {
-        noteModal.style.display = 'block';
+        openAddNoteModal();
     });
 
     cancelNoteButton.addEventListener('click', () => {
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedFolderColor = '#dbeafe';
 
     addNewFolderButton.addEventListener('click', () => {
-        folderModal.style.display = 'block';
+        openAddFolderModal();
     });
 
     cancelFolderButton.addEventListener('click', () => {
@@ -533,7 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 trashItem.innerHTML = `
                     <div class="trash-item-content">
                         <span><i data-lucide="file-text"></i> ${item.title}</span>
-                        <p>${item.content.substring(0, 50)}${item.content.length > 50 ? '...' : ''}</p>
+                        <p>Deleted on: ${item.date}</p> <!-- Displaying the date instead of content -->
                     </div>
                     <button class="restore-button" data-index="${index}">Restore</button>
                 `;
@@ -579,11 +579,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const dialog = document.createElement('div');
         dialog.className = 'modal';
         dialog.innerHTML = `
-            <div class="modal-content">
+            <div class="modal-content" style="outline: none;">
                 <h2>${folder.name}</h2>
-                <div id="folderNotes"></div>
-                <div class="modal-actions">
-                    <button id="closeFolderDialog">Close</button>
+                <div id="folderNotes" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;"></div>
+                <div class="modal-actions" style="margin-top: 20px;">
+                    <button id="closeFolderDialog" style="outline: none;">Close</button>
                 </div>
             </div>
         `;
@@ -599,6 +599,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const noteElement = document.createElement('div');
                 noteElement.className = 'note';
                 noteElement.style.backgroundColor = note.color;
+                noteElement.style.padding = '10px';
+                noteElement.style.borderRadius = '8px';
+                noteElement.style.outline = 'none';
                 noteElement.innerHTML = `
                     <div class="note-title">
                         <span>${note.title}</span>
@@ -616,6 +619,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         dialog.style.display = 'block';
+
+        // Add a click event listener to the dialog to prevent closing when clicking inside
+        dialog.addEventListener('click', (event) => {
+            if (event.target === dialog) {
+                document.body.removeChild(dialog);
+            }
+        });
     }
 
     function moveNoteToFolder(noteId, folderId) {
@@ -625,5 +635,75 @@ document.addEventListener('DOMContentLoaded', () => {
             renderNotes();
             renderAllNotesAndFolders();
         }
+    }
+
+    // Close modal when clicking outside of it
+    noteModal.addEventListener('click', (event) => {
+        if (event.target === noteModal) {
+            noteModal.style.display = 'none';
+        }
+    });
+
+    folderModal.addEventListener('click', (event) => {
+        if (event.target === folderModal) {
+            folderModal.style.display = 'none';
+        }
+    });
+
+    trashModal.addEventListener('click', (event) => {
+        if (event.target === trashModal) {
+            trashModal.style.display = 'none';
+        }
+    });
+
+    function openAddNoteModal() {
+        const noteModal = document.getElementById('addNoteModal');
+        noteModal.style.display = 'block';
+
+        // Close modal when clicking outside of it
+        noteModal.addEventListener('click', (event) => {
+            if (event.target === noteModal) {
+                noteModal.style.display = 'none';
+            }
+        });
+
+        const closeButton = document.getElementById('cancelNote');
+        closeButton.addEventListener('click', () => {
+            noteModal.style.display = 'none';
+        });
+    }
+
+    function openAddFolderModal() {
+        const folderModal = document.getElementById('addFolderModal');
+        folderModal.style.display = 'block';
+
+        // Close modal when clicking outside of it
+        folderModal.addEventListener('click', (event) => {
+            if (event.target === folderModal) {
+                folderModal.style.display = 'none';
+            }
+        });
+
+        const closeButton = document.getElementById('cancelFolder');
+        closeButton.addEventListener('click', () => {
+            folderModal.style.display = 'none';
+        });
+    }
+
+    function openTrashModal() {
+        const trashModal = document.getElementById('trashModal');
+        trashModal.style.display = 'block';
+
+        // Close modal when clicking outside of it
+        trashModal.addEventListener('click', (event) => {
+            if (event.target === trashModal) {
+                trashModal.style.display = 'none';
+            }
+        });
+
+        const closeButton = document.getElementById('closeTrash');
+        closeButton.addEventListener('click', () => {
+            trashModal.style.display = 'none';
+        });
     }
 });

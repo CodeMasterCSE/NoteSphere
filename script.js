@@ -41,6 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             folderElement.setAttribute('data-folder-id', folder.id);
             foldersGrid.appendChild(folderElement);
+
+            // Add click event listener to open folder dialog
+            folderElement.addEventListener('click', () => openFolderDialog(folder));
+
+            // Add drag and drop event listeners
+            folderElement.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                folderElement.classList.add('drag-over');
+            });
+
+            folderElement.addEventListener('dragleave', () => {
+                folderElement.classList.remove('drag-over');
+            });
+
+            folderElement.addEventListener('drop', (e) => {
+                e.preventDefault();
+                folderElement.classList.remove('drag-over');
+                const noteId = parseInt(e.dataTransfer.getData('text/plain'));
+                moveNoteToFolder(noteId, folder.id);
+            });
         });
 
         // Add "New Folder" button
@@ -80,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const noteElement = document.createElement('div');
             noteElement.className = 'note';
             noteElement.style.backgroundColor = note.color;
+            noteElement.draggable = true; // Make note draggable
             noteElement.innerHTML = `
                 <div class="note-title">
                     <span>${note.title}</span>
@@ -91,7 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="edit-button" data-id="${note.id}"><i data-lucide="edit-3"></i></button>
                 </div>
             `;
+            noteElement.setAttribute('data-note-id', note.id);
             notesGrid.appendChild(noteElement);
+
+            // Add drag start event listener
+            noteElement.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', note.id);
+            });
         });
 
         // Add "New Note" button
@@ -211,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add New Note functionality
     const noteModal = document.getElementById('addNoteModal');
-    const addNewButton = document.getElementById('addNewButton');
+    const addNewNoteButton = document.getElementById('addNewNoteButton');
     const saveNoteButton = document.getElementById('saveNote');
     const cancelNoteButton = document.getElementById('cancelNote');
     const noteTitleInput = document.getElementById('noteTitle');
@@ -220,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let selectedNoteColor = '#dbeafe';
 
-    addNewButton.addEventListener('click', () => {
+    addNewNoteButton.addEventListener('click', () => {
         noteModal.style.display = 'block';
     });
 
@@ -273,12 +300,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add New Folder functionality
     const folderModal = document.getElementById('addFolderModal');
+    const addNewFolderButton = document.getElementById('addNewFolderButton');
     const saveFolderButton = document.getElementById('saveFolder');
     const cancelFolderButton = document.getElementById('cancelFolder');
     const folderNameInput = document.getElementById('folderName');
     const folderColorOptions = document.querySelectorAll('#addFolderModal .color-option');
 
     let selectedFolderColor = '#dbeafe';
+
+    addNewFolderButton.addEventListener('click', () => {
+        folderModal.style.display = 'block';
+    });
 
     cancelFolderButton.addEventListener('click', () => {
         folderModal.style.display = 'none';
@@ -540,5 +572,58 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderAllNotesAndFolders();
             });
         });
+    }
+
+    // Function to open folder dialog
+    function openFolderDialog(folder) {
+        const dialog = document.createElement('div');
+        dialog.className = 'modal';
+        dialog.innerHTML = `
+            <div class="modal-content">
+                <h2>${folder.name}</h2>
+                <div id="folderNotes"></div>
+                <div class="modal-actions">
+                    <button id="closeFolderDialog">Close</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(dialog);
+
+        const folderNotes = document.getElementById('folderNotes');
+        const notesInFolder = notes.filter(note => note.folderId === folder.id);
+
+        if (notesInFolder.length === 0) {
+            folderNotes.innerHTML = '<p>No notes in this folder</p>';
+        } else {
+            notesInFolder.forEach(note => {
+                const noteElement = document.createElement('div');
+                noteElement.className = 'note';
+                noteElement.style.backgroundColor = note.color;
+                noteElement.innerHTML = `
+                    <div class="note-title">
+                        <span>${note.title}</span>
+                    </div>
+                    <div class="note-content">${note.content}</div>
+                    <div class="note-date">${note.date}</div>
+                `;
+                folderNotes.appendChild(noteElement);
+            });
+        }
+
+        const closeButton = document.getElementById('closeFolderDialog');
+        closeButton.addEventListener('click', () => {
+            document.body.removeChild(dialog);
+        });
+
+        dialog.style.display = 'block';
+    }
+
+    function moveNoteToFolder(noteId, folderId) {
+        const noteIndex = notes.findIndex(note => note.id === noteId);
+        if (noteIndex !== -1) {
+            notes[noteIndex].folderId = folderId;
+            renderNotes();
+            renderAllNotesAndFolders();
+        }
     }
 });

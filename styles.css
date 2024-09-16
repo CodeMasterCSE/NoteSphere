@@ -489,7 +489,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -502,7 +502,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
 body {
@@ -995,7 +995,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -1008,7 +1008,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -1502,7 +1502,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -1515,7 +1515,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2009,7 +2009,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -2022,7 +2022,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2434,7 +2434,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -2447,7 +2447,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2952,7 +2952,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -2965,7 +2965,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -3460,7 +3460,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -3473,7 +3473,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -3969,7 +3969,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -3982,7 +3982,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -4452,7 +4452,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -4465,7 +4465,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -4968,7 +4968,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -4981,7 +4981,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -13519,7 +13519,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -14054,7 +14054,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -14587,7 +14587,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -15124,7 +15124,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -15401,7 +15401,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -15679,7 +15679,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -15954,7 +15954,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -16486,7 +16486,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -17024,7 +17024,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -17042,7 +17042,7 @@ h2 {
     font-weight: 500;
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
 body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -17553,7 +17553,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -17571,22 +17571,22 @@ h2 {
     font-weight: 500;
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-#addNewButton:active {
+.nav-button:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#addNewButton i {
+.nav-button i {
     transition: transform 0.3s ease;
 }
 
-#addNewButton:hover i {
+.nav-button:hover i {
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -18096,7 +18096,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -18650,7 +18650,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -19208,7 +19208,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -19724,7 +19724,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -20230,7 +20230,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -20244,7 +20244,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -20772,551 +20772,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
-    color: white;
-    background-color: #3b82f6;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#addNewButton:hover {
-    background-color: #2563eb;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.folder {
-    padding: 20px;
-    border-radius: 12px;
-    position: relative;
-    cursor: default;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.folder:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.folder::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 0;
-    right: 0;
-    height: 20px;
-    background-color: inherit;
-    border-radius: 12px 12px 0 0;
-}
-
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-}
-
-.app-container {
-    display: flex;
-    height: 100vh;
-}
-
-.sidebar {
-    width: 220px;
-    background-color: white;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    width: 100%;
-    text-align: center;
-}
-
-.logo-icon {
-    width: 64px;
-    height: 64px;
-    background-color: #3b82f6;
-    border-radius: 12px;
-    margin-bottom: 12px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-.logo-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    color: #1e293b;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
 .nav-button {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #64748b;
-}
-
-.nav-button.active {
-    color: #3b82f6;
-}
-
-.nav-button i {
-    margin-right: 12px;
-    font-size: 18px;
-}
-
-.main-content {
-    flex: 1;
-    padding: 32px;
-    overflow-y: auto;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header-actions {
-    display: flex;
-    align-items: center;
-}
-
-.search-container {
-    position: relative;
-    margin-right: 16px;
-}
-
-.search-container input {
-    padding: 8px 32px 8px 16px;
-    border-radius: 8px;
-    border: none;
-    background-color: #f3f4f6;
-}
-
-.search-container i {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #9ca3af;
-}
-
-.menu-icon {
-    display: none;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 16px;
-}
-
-.tabs {
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.tab {
-    background: none;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    color: #6b7280;
-    border-bottom: 2px solid transparent;
-}
-
-.tab.active {
-    color: #3b82f6;
-    border-bottom-color: #3b82f6;
-}
-
-.folders-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 24px;
-}
-
-.folder {
-    padding: 20px;
-    border-radius: 12px;
-    position: relative;
-    cursor: default;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.folder:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.folder::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 0;
-    right: 0;
-    height: 20px;
-    background-color: inherit;
-    border-radius: 12px 12px 0 0;
-    opacity: 0.7;
-}
-
-.folder-title {
-    font-weight: 500;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-
-.folder-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
-
-.folder-title span {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-}
-
-.folder-date {
-    font-size: 14px;
-    color: #6b7280;
-    z-index: 1;
-}
-
-.note {
-    padding: 20px;
-    border-radius: 2px;
-    position: relative;
-    cursor: move;
-    background-color: #fef68a;
-    box-shadow: 
-        0 1px 1px rgba(0,0,0,0.12),
-        0 2px 2px rgba(0,0,0,0.12),
-        0 4px 4px rgba(0,0,0,0.12),
-        0 8px 8px rgba(0,0,0,0.12);
-    transition: all 0.3s ease;
-}
-
-.note:nth-child(even) {
-    background-color: #fdfd96;
-}
-
-.note:hover {
-    transform: scale(1.05);
-    z-index: 1;
-}
-
-.note-title {
-    font-weight: 600;
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #2c3e50;
-}
-
-.note-content {
-    font-size: 14px;
-    color: #34495e;
-    margin-bottom: 12px;
-    line-height: 1.4;
-}
-
-.note-date {
-    font-size: 12px;
-    color: #7f8c8d;
-    font-style: italic;
-}
-
-.new-item {
-    border: 2px dashed #d1d5db;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 100px;
-    color: #9ca3af;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.folders-grid .new-item,
-.notes-grid .new-item {
-    grid-column: span 1;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #ffffff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.modal-content h2 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #333;
-}
-
-.modal-content input,
-.modal-content textarea,
-.modal-content select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.modal-content textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-.color-picker {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.color-option {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.color-option:hover {
-    transform: scale(1.1);
-}
-
-.modal-actions {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.modal-actions button {
-    margin-left: 10px;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#saveNote, #saveFolder {
-    background-color: #3b82f6;
-    color: white;
-}
-
-#cancelNote, #cancelFolder, #closeTrash {
-    background-color: #e5e7eb;
-    color: #4b5563;
-}
-
-.delete-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #e74c3c;
-    padding: 4px;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    position: absolute;
-    top: 10px;
-    right: 0;
-    display: flex;
-    gap: 5px;
-}
-
-.note:hover .delete-button,
-.folder:hover .delete-button {
-    opacity: 0.7;
-}
-
-.delete-button:hover {
-    opacity: 1;
-}
-
-#trashContent {
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.trash-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.trash-item:last-child {
-    border-bottom: none;
-}
-
-.restore-button {
-    background-color: #10b981;
-    color: white;
-    border: none;
-    padding: 4px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-
-.notes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 24px;
-}
-
-.note-actions {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.edit-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #3b82f6;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-
-.delete-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #e74c3c;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.note:hover .edit-button,
-.note:hover .delete-button {
-    opacity: 1;
-}
-
-.edit-button:hover,
-.delete-button:hover {
-    opacity: 1;
-}
-
-.edit-button {
-    color: #3b82f6;
-}
-
-.delete-button {
-    color: #e74c3c;
-}
-
-#trashButton {
-    color: white;
-    background-color: #e74c3c;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#trashButton:hover {
-    background-color: #c0392b;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#addNewButton {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -21330,7 +20786,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -21860,7 +21316,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -21874,7 +21330,551 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#addNewButton:hover {
+.nav-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folder {
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    cursor: default;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.folder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.folder::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: inherit;
+    border-radius: 12px 12px 0 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #3b82f6;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.nav-button.active {
+    color: #3b82f6;
+}
+
+.nav-button i {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 32px;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 16px;
+}
+
+.search-container input {
+    padding: 8px 32px 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f3f4f6;
+}
+
+.search-container i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.menu-icon {
+    display: none;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+}
+
+.folders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.folder {
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    cursor: default;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.folder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.folder::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: inherit;
+    border-radius: 12px 12px 0 0;
+    opacity: 0.7;
+}
+
+.folder-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.folder-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.folder-title span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.folder-date {
+    font-size: 14px;
+    color: #6b7280;
+    z-index: 1;
+}
+
+.note {
+    padding: 20px;
+    border-radius: 2px;
+    position: relative;
+    cursor: move;
+    background-color: #fef68a;
+    box-shadow: 
+        0 1px 1px rgba(0,0,0,0.12),
+        0 2px 2px rgba(0,0,0,0.12),
+        0 4px 4px rgba(0,0,0,0.12),
+        0 8px 8px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.note:nth-child(even) {
+    background-color: #fdfd96;
+}
+
+.note:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.note-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2c3e50;
+}
+
+.note-content {
+    font-size: 14px;
+    color: #34495e;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.note-date {
+    font-size: 12px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.new-item {
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100px;
+    color: #9ca3af;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.folders-grid .new-item,
+.notes-grid .new-item {
+    grid-column: span 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-content textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.color-picker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-actions button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#saveNote, #saveFolder {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#cancelNote, #cancelFolder, #closeTrash {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    padding: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.note:hover .delete-button,
+.folder:hover .delete-button {
+    opacity: 0.7;
+}
+
+.delete-button:hover {
+    opacity: 1;
+}
+
+#trashContent {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.trash-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.trash-item:last-child {
+    border-bottom: none;
+}
+
+.restore-button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.note-actions {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3b82f6;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.note:hover .edit-button,
+.note:hover .delete-button {
+    opacity: 1;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    opacity: 1;
+}
+
+.edit-button {
+    color: #3b82f6;
+}
+
+.delete-button {
+    color: #e74c3c;
+}
+
+#trashButton {
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#trashButton:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+    color: white;
+    background-color: #3b82f6;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -22223,7 +22223,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#addNewButton {
+.nav-button {
     color: white;
     background-color: #3b82f6;
     padding: 10px 16px;
@@ -22237,7 +22237,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -22435,7 +22435,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -22449,7 +22449,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb; /* Darker blue on hover */
     transform: translateY(-2px); /* Lift effect on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
@@ -22493,7 +22493,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -22994,7 +22994,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -23496,7 +23496,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -23996,7 +23996,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -24495,7 +24495,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -24995,7 +24995,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -25490,7 +25490,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -25504,7 +25504,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb; /* Darker blue on hover */
     transform: translateY(-2px); /* Lift effect on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
@@ -25982,7 +25982,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-#addNewButton {
+.nav-button {
     color: white; /* Change text color to white for contrast */
     background-color: #3b82f6; /* Set background color to blue */
     padding: 10px 16px; /* Add padding for a button-like appearance */
@@ -25996,7 +25996,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
 }
 
-#addNewButton:hover {
+.nav-button:hover {
     background-color: #2563eb; /* Darker blue on hover */
     transform: translateY(-2px); /* Lift effect on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */

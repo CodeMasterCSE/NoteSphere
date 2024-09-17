@@ -25491,23 +25491,23 @@ h2 {
 }
 
 .nav-button {
-    color: white; /* Change text color to white for contrast */
-    background-color: #3b82f6; /* Set background color to blue */
-    padding: 10px 16px; /* Add padding for a button-like appearance */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor to pointer */
-    font-size: 14px; /* Ensure font size is consistent */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    width: 100%; /* Set width to cover maximum part of the sidebar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+    color: white;
+    background-color: #3b82f6;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-button:hover {
-    background-color: #2563eb; /* Darker blue on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -25523,12 +25523,12 @@ body {
 }
 
 .sidebar {
-    width: 220px; /* Reduced from 250px */
+    width: 220px;
     background-color: white;
     padding: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items */
+    align-items: center;
 }
 
 .logo {
@@ -25538,8 +25538,8 @@ body {
 }
 
 .logo-icon {
-    width: 32px; /* Adjust width as needed */
-    height: 32px; /* Adjust height as needed */
+    width: 32px;
+    height: 32px;
     background-color: #3b82f6;
     border-radius: 50%;
     margin-right: 8px;
@@ -25547,7 +25547,7 @@ body {
 
 .logo-text {
     font-weight: bold;
-    font-size: 18px; /* Reduced from 20px */
+    font-size: 18px;
 }
 
 .nav-button {
@@ -25558,7 +25558,7 @@ body {
     cursor: pointer;
     margin-bottom: 16px;
     color: #6b7280;
-    font-size: 14px; /* Added to reduce text size */
+    font-size: 14px;
 }
 
 .nav-button.active {
@@ -25566,7 +25566,7 @@ body {
 }
 
 .nav-button i {
-    margin-right: 6px; /* Reduced from 8px */
+    margin-right: 6px;
 }
 
 .main-content {
@@ -25652,7 +25652,7 @@ h2 {
     border-radius: 12px;
     position: relative;
     cursor: default;
-    height: 100px; /* Reduced from 150px */
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25708,7 +25708,7 @@ h2 {
 .note {
     padding: 20px;
     border-radius: 2px;
-    position: relative; /* Ensure this is set for absolute positioning of children */
+    position: relative;
     cursor: move;
     background-color: #fef68a;
     box-shadow: 
@@ -25758,17 +25758,15 @@ h2 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    height: 100px; /* Match the height of folders */
+    height: 100px;
     color: #9ca3af;
     padding: 20px;
     box-sizing: border-box;
-    /* Remove any width constraints to allow it to fill the grid cell */
     width: 100%;
 }
 
 .folders-grid .new-item,
 .notes-grid .new-item {
-    /* Ensure the new item takes up a full grid cell */
     grid-column: span 1;
 }
 
@@ -25917,8 +25915,8 @@ h2 {
 
 .note-actions {
     position: absolute;
-    right: 10px; /* Align to the right */
-    bottom: 10px; /* Positioning for edit button */
+    right: 10px; 
+    bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -25928,7 +25926,7 @@ h2 {
     border: none;
     cursor: pointer;
     color: #3b82f6;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: opacity 0.2s ease;
 }
 
@@ -25937,16 +25935,16 @@ h2 {
     border: none;
     cursor: pointer;
     color: #e74c3c;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: opacity 0.2s ease;
     position: absolute;
-    top: 10px; /* Positioning for delete button */
-    right: 10px; /* Align to the right */
+    top: 10px;
+    right: 10px;
 }
 
 .note:hover .edit-button,
 .note:hover .delete-button {
-    opacity: 1; /* Show buttons on hover */
+    opacity: 1;
 }
 
 .edit-button:hover,
@@ -25963,41 +25961,41 @@ h2 {
 }
 
 #trashButton {
-    color: white; /* Change text color to white for contrast */
-    background-color: #e74c3c; /* Set background color to red */
-    padding: 10px 16px; /* Add padding for a button-like appearance */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor to pointer */
-    font-size: 14px; /* Ensure font size is consistent */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    width: 100%; /* Set width to cover maximum part of the sidebar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+    
 #trashButton:hover {
-    background-color: #c0392b; /* Darker red on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-button {
-    color: white; /* Change text color to white for contrast */
-    background-color: #3b82f6; /* Set background color to blue */
-    padding: 10px 16px; /* Add padding for a button-like appearance */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor to pointer */
-    font-size: 14px; /* Ensure font size is consistent */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    width: 100%; /* Set width to cover maximum part of the sidebar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+    color: white;
+    background-color: #3b82f6;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-button:hover {
-    background-color: #2563eb; /* Darker blue on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

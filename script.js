@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Lucide icons
+    
     lucide.createIcons();
 
-    // Sample data
     let folders = [
         { id: 1, name: 'Movie Review', color: '#dbeafe', date: '15-03-2023' },
         { id: 2, name: 'Class Notes', color: '#fee2e2', date: '10-03-2023' },
@@ -42,10 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
             folderElement.setAttribute('data-folder-id', folder.id);
             foldersGrid.appendChild(folderElement);
 
-            // Add click event listener to open folder dialog
             folderElement.addEventListener('click', () => openFolderDialog(folder));
 
-            // Add drag and drop event listeners
             folderElement.addEventListener('dragover', (e) => {
                 e.preventDefault();
                 folderElement.classList.add('drag-over');
@@ -63,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Add "New Folder" button
         const newFolderButton = document.createElement('div');
         newFolderButton.className = 'new-item';
         newFolderButton.innerHTML = `
@@ -75,8 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         foldersGrid.appendChild(newFolderButton);
         lucide.createIcons();
-
-        // Add delete event listeners
+        
         document.querySelectorAll('.folder .delete-button').forEach(button => {
             button.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -86,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const deletedFolder = folders.splice(folderIndex, 1)[0];
                     trash.push({ ...deletedFolder, type: 'folder' });
                     renderFolders();
-                    renderAllNotesAndFolders(); // Update the sidebar
+                    renderAllNotesAndFolders();
                 }
             });
         });
@@ -100,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const noteElement = document.createElement('div');
             noteElement.className = 'note';
             noteElement.style.backgroundColor = note.color;
-            noteElement.draggable = true; // Make note draggable
+            noteElement.draggable = true; 
             noteElement.innerHTML = `
                 <div class="note-title">
                     <span>${note.title}</span>
@@ -115,13 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
             noteElement.setAttribute('data-note-id', note.id);
             notesGrid.appendChild(noteElement);
 
-            // Add drag start event listener
             noteElement.addEventListener('dragstart', (e) => {
                 e.dataTransfer.setData('text/plain', note.id);
             });
         });
 
-        // Add "New Note" button
         const newNoteButton = document.createElement('div');
         newNoteButton.className = 'new-item';
         newNoteButton.innerHTML = `
@@ -133,8 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         notesGrid.appendChild(newNoteButton);
         lucide.createIcons();
-
-        // Add delete event listeners
+        
         document.querySelectorAll('.note .delete-button').forEach(button => {
             button.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -144,12 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     const deletedNote = notes.splice(noteIndex, 1)[0];
                     trash.push({ ...deletedNote, type: 'note' });
                     renderNotes();
-                    renderAllNotesAndFolders(); // Update the sidebar
+                    renderAllNotesAndFolders(); 
                 }
             });
         });
 
-        // Add edit event listeners
         document.querySelectorAll('.note .edit-button').forEach(button => {
             button.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -223,11 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return `${day}-${month}-${year}`;
     }
 
-    // Initial render
     renderFolders('All');
     renderNotes('All');
 
-    // Tab functionality
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -236,7 +225,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Add New Note functionality
     const noteModal = document.getElementById('addNoteModal');
     const addNewNoteButton = document.getElementById('addNewNoteButton');
     const saveNoteButton = document.getElementById('saveNote');
@@ -278,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             notes.unshift(newNote);
             renderNotes();
-            renderAllNotesAndFolders(); // Update the sidebar
+            renderAllNotesAndFolders(); 
             noteModal.style.display = 'none';
             resetNoteModalInputs();
         }
@@ -292,13 +280,11 @@ document.addEventListener('DOMContentLoaded', () => {
         selectedNoteColor = '#dbeafe';
         noteColorOptions.forEach(opt => opt.style.border = 'none');
         noteColorOptions[0].style.border = '2px solid #3b82f6';
-
-        // Reset the save button onclick event
+        
         const saveNoteButton = document.getElementById('saveNote');
         saveNoteButton.onclick = null;
     }
 
-    // Add New Folder functionality
     const folderModal = document.getElementById('addFolderModal');
     const addNewFolderButton = document.getElementById('addNewFolderButton');
     const saveFolderButton = document.getElementById('saveFolder');
@@ -336,17 +322,16 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             folders.unshift(newFolder);
             renderFolders();
-            renderAllNotesAndFolders(); // Update the sidebar
+            renderAllNotesAndFolders();
             folderModal.style.display = 'none';
             resetFolderModalInputs();
         }
     });
 
-    // Add this new event listener
     folderNameInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            event.preventDefault(); // Prevent form submission
-            saveFolderButton.click(); // Trigger the save button click
+            event.preventDefault();
+            saveFolderButton.click();
         }
     });
 
@@ -385,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index !== -1) {
                 notes[index] = updatedNote;
                 renderNotes();
-                renderAllNotesAndFolders(); // Update the sidebar
+                renderAllNotesAndFolders();
                 noteModal.style.display = 'none';
                 resetNoteModalInputs();
             }
@@ -402,9 +387,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const foldersGrid = document.getElementById('foldersGrid');
         const notesGrid = document.getElementById('notesGrid');
 
-        // Filter folders
         const filteredFolders = folders.filter(folder => folder.name.toLowerCase().includes(searchTerm));
-        foldersGrid.innerHTML = ''; // Clear existing folders
+        foldersGrid.innerHTML = ''; 
         filteredFolders.forEach(folder => {
             const folderElement = document.createElement('div');
             folderElement.className = 'folder';
@@ -417,10 +401,9 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             foldersGrid.appendChild(folderElement);
         });
-
-        // Filter notes
+        
         const filteredNotes = notes.filter(note => note.title.toLowerCase().includes(searchTerm) || note.content.toLowerCase().includes(searchTerm));
-        notesGrid.innerHTML = ''; // Clear existing notes
+        notesGrid.innerHTML = ''; 
         filteredNotes.forEach(note => {
             const noteElement = document.createElement('div');
             noteElement.className = 'note';
@@ -440,10 +423,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const folderList = document.getElementById('folderList');
         const noteList = document.getElementById('noteList');
         
-        folderList.innerHTML = ''; // Clear existing content for folders
-        noteList.innerHTML = ''; // Clear existing content for notes
+        folderList.innerHTML = ''; 
+        noteList.innerHTML = '';
 
-        // Render folders
         folders.forEach(folder => {
             const folderElement = document.createElement('div');
             folderElement.innerHTML = `
@@ -451,8 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="delete-button" data-id="${folder.id}"><i data-lucide="trash-2"></i></button>
             `;
             folderList.appendChild(folderElement);
-
-            // Add delete event listener for folders
+            
             folderElement.querySelector('.delete-button').addEventListener('click', (e) => {
                 e.stopPropagation();
                 const folderId = parseInt(e.target.dataset.id);
@@ -461,12 +442,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     const deletedFolder = folders.splice(folderIndex, 1)[0];
                     trash.push({ ...deletedFolder, type: 'folder' });
                     renderFolders();
-                    renderAllNotesAndFolders(); // Update the sidebar
+                    renderAllNotesAndFolders();
                 }
             });
         });
 
-        // Render notes
         notes.forEach(note => {
             const noteElement = document.createElement('div');
             noteElement.innerHTML = `
@@ -475,7 +455,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             noteList.appendChild(noteElement);
 
-            // Add delete event listener for notes
             noteElement.querySelector('.delete-button').addEventListener('click', (e) => {
                 e.stopPropagation();
                 const noteId = parseInt(e.target.dataset.id);
@@ -484,13 +463,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     const deletedNote = notes.splice(noteIndex, 1)[0];
                     trash.push({ ...deletedNote, type: 'note' });
                     renderNotes();
-                    renderAllNotesAndFolders(); // Update the sidebar
+                    renderAllNotesAndFolders();
                 }
             });
         });
     }
 
-    // Call this function to render notes and folders when the page loads
     renderAllNotesAndFolders();
 
     const trashButton = document.getElementById('trashButton');
@@ -515,13 +493,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Create separate containers for notes and folders
         const notesContainer = document.createElement('div');
         notesContainer.className = 'trash-notes';
         const foldersContainer = document.createElement('div');
         foldersContainer.className = 'trash-folders';
 
-        // Add headers
         notesContainer.innerHTML = '<h3><i data-lucide="file-text"></i> Deleted Notes</h3>';
         foldersContainer.innerHTML = '<h3><i data-lucide="folder"></i> Deleted Folders</h3>';
 
@@ -533,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 trashItem.innerHTML = `
                     <div class="trash-item-content">
                         <span><i data-lucide="file-text"></i> ${item.title}</span>
-                        <p>Deleted on: ${item.date}</p> <!-- Displaying the date instead of content -->
+                        <p>Created on: ${item.date}</p>
                     </div>
                     <button class="restore-button" data-index="${index}">Restore</button>
                 `;
@@ -552,11 +528,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         trashContent.appendChild(notesContainer);
         trashContent.appendChild(foldersContainer);
-
-        // Initialize Lucide icons
+        
         lucide.createIcons();
 
-        // Add restore event listeners
         document.querySelectorAll('.restore-button').forEach(button => {
             button.addEventListener('click', () => {
                 const index = parseInt(button.dataset.index);
@@ -574,7 +548,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Function to open folder dialog
     function openFolderDialog(folder) {
         const dialog = document.createElement('div');
         dialog.className = 'modal';
@@ -619,8 +592,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         dialog.style.display = 'block';
-
-        // Add a click event listener to the dialog to prevent closing when clicking inside
+        
         dialog.addEventListener('click', (event) => {
             if (event.target === dialog) {
                 document.body.removeChild(dialog);
@@ -637,7 +609,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Close modal when clicking outside of it
     noteModal.addEventListener('click', (event) => {
         if (event.target === noteModal) {
             noteModal.style.display = 'none';
@@ -660,7 +631,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const noteModal = document.getElementById('addNoteModal');
         noteModal.style.display = 'block';
 
-        // Close modal when clicking outside of it
         noteModal.addEventListener('click', (event) => {
             if (event.target === noteModal) {
                 noteModal.style.display = 'none';
@@ -677,7 +647,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const folderModal = document.getElementById('addFolderModal');
         folderModal.style.display = 'block';
 
-        // Close modal when clicking outside of it
         folderModal.addEventListener('click', (event) => {
             if (event.target === folderModal) {
                 folderModal.style.display = 'none';
@@ -693,8 +662,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openTrashModal() {
         const trashModal = document.getElementById('trashModal');
         trashModal.style.display = 'block';
-
-        // Close modal when clicking outside of it
+        
         trashModal.addEventListener('click', (event) => {
             if (event.target === trashModal) {
                 trashModal.style.display = 'none';
